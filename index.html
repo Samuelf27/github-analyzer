@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Analise qualquer perfil do GitHub: linguagens, estrelas e repositórios mais populares." />
+  <title>GitHub Analyzer 📊</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+</head>
+<body>
+  <div class="wrap">
+    <header class="head">
+      <h1>📊 GitHub <span>Analyzer</span></h1>
+      <p>Insights de qualquer perfil: linguagens, estrelas e repositórios em destaque.</p>
+      <form class="search" id="form">
+        <input id="user" placeholder="usuário do GitHub (ex.: Samuelf27)" autocomplete="off" />
+        <button type="submit">Analisar</button>
+      </form>
+    </header>
+
+    <p class="status" id="status"></p>
+
+    <main class="dash hidden" id="dash">
+      <section class="profile" id="profile"></section>
+
+      <section class="stats" id="stats"></section>
+
+      <section class="charts">
+        <div class="card">
+          <h3>Linguagens mais usadas</h3>
+          <canvas id="langChart"></canvas>
+        </div>
+        <div class="card">
+          <h3>Repositórios com mais estrelas</h3>
+          <canvas id="starChart"></canvas>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>⭐ Top repositórios</h3>
+        <div class="repos" id="repos"></div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="credit">
+    Dados: API pública do GitHub · por
+    <a href="https://github.com/Samuelf27" target="_blank" rel="noopener">Samuel Ferreira</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
