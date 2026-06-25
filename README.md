@@ -15,6 +15,8 @@ Dashboard que analisa qualquer perfil do GitHub — linguagens, estrelas e repos
   <a href="https://samuelf27.github.io/github-analyzer/"><b>🔗 Ver ao vivo</b></a>
 </p>
 
+<p align="center"><img src="https://raw.githubusercontent.com/Samuelf27/github-analyzer/main/preview.png" alt="Preview do projeto" width="760" /></p>
+
 ---
 
 ## 📌 Sobre o projeto
